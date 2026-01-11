@@ -146,8 +146,8 @@ const Navbar1 = ({
     <section className={cn("py-4", className)}>
       <div className="container">
         {/* Desktop Menu */}
-        <nav className="hidden items-center justify-between lg:flex">
-          <div className="flex items-center gap-6">
+        <nav className="hidden items-center justify-center lg:flex gap-6">
+          <div className="flex items-center gap-6 ml-12">
             {/* Logo */}
             <a href={logo.url} className="flex items-center gap-2">
               <img
@@ -167,7 +167,7 @@ const Navbar1 = ({
               </NavigationMenu>
             </div>
           </div>
-          <div className="flex gap-2">
+          <div className="flex gap-2 ml-auto mr-12">
             <Button asChild variant="outline" size="sm">
               <a href={auth.login.url}>{auth.login.title}</a>
             </Button>
