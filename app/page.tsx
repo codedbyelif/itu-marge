@@ -9,7 +9,7 @@ export default function Page() {
       <Hero />
       <HeroSection />
       <FAQ />
-      <Footer7 />
+     
     </>
   );
 }

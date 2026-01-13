@@ -4,106 +4,51 @@ import { Badge } from '@/components/ui/badge';
 
 interface ProjectItem {
   id: number;
+  href:string;
   title: string;
   description: string;
   category: string;
   image: string;
-  author: string;
-  avatar: string;
   date: string;
 }
 
 const projectsData: ProjectItem[] = [
   {
     id: 1,
-    title: 'The Future of Web Development: What\'s Next in 2024',
-    description: 'Explore the latest trends in web development, from AI-powered tools to new frameworks that are reshaping how we build the web. Discover what developers need to know to stay ahead.',
-    category: 'Web Development',
+    href:'/projects/boron-carbide',
+    title: 'Bor Karbür Tabanlı Kesici ve Delici Uç Geliştirilmesi',
+    description: 'Bor karbür (B₄C) bazlı, yüksek dayanımlı seramikler üreterek, mermercilik sektöründeki elmas telli ve zincir kollu taş kesme makineleri için daha dayanıklı ve ekonomik yerli kesici uçlar geliştirmeyi amaçlıyoruz.',
+    category: 'Research',
     image: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg',
-    author: 'Sarah Chen',
-    avatar: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp',
-    date: '15 Jan 2024'
+    date: '04 Jan 2026'
   },
   {
     id: 2,
-    title: 'Building Scalable APIs with Modern Architecture Patterns',
-    description: 'Learn about microservices, GraphQL, and event-driven architectures that are powering today\'s most successful applications. Practical insights for building robust APIs.',
-    category: 'Backend',
+    title: 'Madencilikte Makine İzlemeve Optimizasyon',
+    href:'/projects/mining-optimization',
+    description: 'Geliştirdiğimiz ikinci proje,madencilik sektöründe gerçek zamanlı veri ve sensör teknolojileri kullanarak makine performansını, görev dağılımını ve üretim akışını optimize etmeyi hedeflemektedir. Bu sayede daha etkin planlama ve kaynak yönetimi ile dijital dönüşüme katkı sağlamaktayız.',
+    category: 'Maden',
     image: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-2.svg',
-    author: 'Marcus Rodriguez',
-    avatar: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp',
-    date: '12 Jan 2024'
+    date: '04 Jan 2026'
   },
   {
     id: 3,
-    title: 'Design Systems: Creating Consistency at Scale',
-    description: 'How leading companies are implementing design systems to maintain visual consistency across products while enabling rapid development and innovation.',
-    category: 'Design',
+    title: 'Nadir Toprak Elementleri Üzerine Araştırmalar',
+    href:'/projects/rare-earth-elements',
+    description: 'MAR-GE\'nin bir diğer projesi, elektronikten savunma sanayisine kadar kritik alanlarda kullanılan Nadir Toprak Elementleri (NTE) üzerine odaklanmaktadır. Proje; NTE\'lerin potansiyelini, çıkarma ve zenginleştirme tekniklerini inceleyerek, gelecekteki teknolojik ihtiyaçlara yönelik bilimsel altyapı oluşturmayı hedeflemektedir.',
+    category: 'Malzeme',
     image: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-3.svg',
-    author: 'Emma Thompson',
-    avatar: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp',
-    date: '10 Jan 2024'
+    date: '04 Jan 2026'
   },
   {
     id: 4,
-    title: 'Machine Learning in Production: Best Practices for Deployment',
-    description: 'From model versioning to monitoring and scaling, learn the essential practices for deploying machine learning models in production environments.',
-    category: 'Machine Learning',
+    title: 'Jeotermalde Rezervuar Yönetimi',
+    href:'/projects/geothermal-reservoir',
+    description: 'Jeotermalde rezervuar yönetimi alanına adım atarken, başlangıçta bu konuda çalışan uzmanlarla iletişime geçtik. Ardından,kapsamlı makale ve Türkiye\'deki jeotermal uygulamalarına yönelik araştırmalar yaparak konu hakkındaki bilgi birikimimizi vestratejik fikirlerimizi geliştirmeyi sürdürüyoruz.',
+    category: 'Jeotermal',
     image: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-4.svg',
-    author: 'Alex Kim',
-    avatar: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp',
-    date: '8 Jan 2024'
+    date: '04 Jan 2026'
   },
-  {
-    id: 5,
-    title: 'The Rise of Edge Computing: Transforming Application Architecture',
-    description: 'Discover how edge computing is revolutionizing application performance and user experience, and learn strategies for implementing edge-first architectures.',
-    category: 'Cloud Computing',
-    image: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-5.svg',
-    author: 'David Park',
-    avatar: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp',
-    date: '5 Jan 2024'
-  },
-  {
-    id: 6,
-    title: 'Cybersecurity Essentials for Modern Applications',
-    description: 'Essential security practices every developer should implement, from authentication and authorization to data encryption and secure coding practices.',
-    category: 'Security',
-    image: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-6.svg',
-    author: 'Lisa Wang',
-    avatar: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp',
-    date: '3 Jan 2024'
-  },
-  {
-    id: 7,
-    title: 'Performance Optimization: Techniques for Faster Web Applications',
-    description: 'Advanced techniques for optimizing web application performance, including code splitting, lazy loading, and modern caching strategies.',
-    category: 'Performance',
-    image: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg',
-    author: 'James Wilson',
-    avatar: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp',
-    date: '1 Jan 2024'
-  },
-  {
-    id: 8,
-    title: 'DevOps Culture: Building Better Software Delivery Pipelines',
-    description: 'How to foster a DevOps culture in your organization and implement CI/CD pipelines that accelerate development while maintaining quality.',
-    category: 'DevOps',
-    image: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-2.svg',
-    author: 'Maria Garcia',
-    avatar: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp',
-    date: '29 Dec 2023'
-  },
-  {
-    id: 9,
-    title: 'Mobile App Development: Native vs Cross-Platform Solutions',
-    description: 'Compare native and cross-platform development approaches, exploring the trade-offs between performance, development speed, and user experience.',
-    category: 'Mobile Development',
-    image: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-3.svg',
-    author: 'Ryan Johnson',
-    avatar: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp',
-    date: '27 Dec 2023'
-  }
 ];
 
 export default function Projects() {
@@ -125,7 +70,7 @@ export default function Projects() {
           {projectsData.map((project) => (
             <a
               key={project.id}
-              href="#"
+              href={project.href}
               className="group flex flex-col"
             >
               <div className="mb-4 flex overflow-clip rounded-xl md:mb-5">
@@ -147,19 +92,6 @@ export default function Projects() {
               </div>
               <div className="mb-4 line-clamp-2 text-sm text-muted-foreground md:mb-5 md:text-base">
                 {project.description}
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="relative flex shrink-0 overflow-hidden rounded-full size-12">
-                  <img
-                    className="aspect-square size-full"
-                    src={project.avatar}
-                    alt={project.author}
-                  />
-                </span>
-                <div className="flex flex-col gap-px">
-                  <span className="text-xs font-medium">{project.author}</span>
-                  <span className="text-xs text-muted-foreground">{project.date}</span>
-                </div>
               </div>
             </a>
           ))}

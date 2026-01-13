@@ -55,9 +55,9 @@ const Navbar1 = ({
     title: "Shadcnblocks.com",
   },
   menu = [
-    { title: "Home", url: "#" },
+    { title: "Home", url: "/" },
     { title: "Projects", url: "/projects" },
-    { title: "Contact", url: "#" },
+    { title: "Contact", url: "/contact" },
   ],
   className,
 }: Navbar1Props) => {
