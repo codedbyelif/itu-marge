@@ -21,7 +21,7 @@ export default function Hero() {
     '/placeholder.svg',
   ];
 
-  const logos = ['/hero-iyzico.svg', '/hero-mastercard.svg', '/hero-visa.svg'];
+  
 
   return (
     <section className="relative overflow-x-clip py-20 md:py-32">
@@ -58,7 +58,7 @@ export default function Hero() {
             <div className="relative h-full w-full">
               <div className="flex h-full animate-[scroll-x_40s_linear_infinite] gap-8 sm:gap-12">
                 {Array(4)
-                  .fill(logos)
+                  
                   .flat()
                   .map((logo, i) => (
                     <div

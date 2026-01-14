@@ -19,7 +19,7 @@ const projectsData: ProjectItem[] = [
     title: 'Bor Karbür Tabanlı Kesici ve Delici Uç Geliştirilmesi',
     description: 'Bor karbür (B₄C) bazlı, yüksek dayanımlı seramikler üreterek, mermercilik sektöründeki elmas telli ve zincir kollu taş kesme makineleri için daha dayanıklı ve ekonomik yerli kesici uçlar geliştirmeyi amaçlıyoruz.',
     category: 'Research',
-    image: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg',
+    image: 'https://bilimgenc.tubitak.gov.tr/sites/default/files/styles/bp-770px-custom_user_desktop_1x/public/bor_karbur.JPG?itok=_ie4Pqx0',
     date: '04 Jan 2026'
   },
   {
@@ -28,7 +28,7 @@ const projectsData: ProjectItem[] = [
     href:'/projects/mining-optimization',
     description: 'Geliştirdiğimiz ikinci proje,madencilik sektöründe gerçek zamanlı veri ve sensör teknolojileri kullanarak makine performansını, görev dağılımını ve üretim akışını optimize etmeyi hedeflemektedir. Bu sayede daha etkin planlama ve kaynak yönetimi ile dijital dönüşüme katkı sağlamaktayız.',
     category: 'Maden',
-    image: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-2.svg',
+    image: 'https://cdn.miateknoloji.com/images/IMG94382.jpg',
     date: '04 Jan 2026'
   },
   {
@@ -37,7 +37,7 @@ const projectsData: ProjectItem[] = [
     href:'/projects/rare-earth-elements',
     description: 'MAR-GE\'nin bir diğer projesi, elektronikten savunma sanayisine kadar kritik alanlarda kullanılan Nadir Toprak Elementleri (NTE) üzerine odaklanmaktadır. Proje; NTE\'lerin potansiyelini, çıkarma ve zenginleştirme tekniklerini inceleyerek, gelecekteki teknolojik ihtiyaçlara yönelik bilimsel altyapı oluşturmayı hedeflemektedir.',
     category: 'Malzeme',
-    image: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-3.svg',
+    image: 'https://nobetcigazetecom.teimg.com/crop/1280x720/nobetcigazete-com/uploads/2025/10/nadir-toprak-elementler.webp',
     date: '04 Jan 2026'
   },
   {
@@ -46,7 +46,7 @@ const projectsData: ProjectItem[] = [
     href:'/projects/geothermal-reservoir',
     description: 'Jeotermalde rezervuar yönetimi alanına adım atarken, başlangıçta bu konuda çalışan uzmanlarla iletişime geçtik. Ardından,kapsamlı makale ve Türkiye\'deki jeotermal uygulamalarına yönelik araştırmalar yaparak konu hakkındaki bilgi birikimimizi vestratejik fikirlerimizi geliştirmeyi sürdürüyoruz.',
     category: 'Jeotermal',
-    image: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-4.svg',
+    image: 'https://greenix.com.tr/storage/bloglar/Jeotermal%20Enerji%20Santralleri.png',
     date: '04 Jan 2026'
   },
 ];
