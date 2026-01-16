@@ -55,9 +55,9 @@ const Navbar1 = ({
     title: "İtu Marge",
   },
   menu = [
-    { title: "Home", url: "/" },
-    { title: "Projects", url: "/projects" },
-    { title: "Contact", url: "/contact" },
+    { title: "Anasayfa", url: "/" },
+    { title: "Projelerimiz", url: "/projelerimiz" },
+    { title: "İletişim", url: "/iletişim" },
   ],
   className,
 }: Navbar1Props) => {
