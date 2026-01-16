@@ -10,29 +10,29 @@ import {
 export default function FAQ() {
   const faqs = [
     {
-      question: "What is a FAQ and why is it important?",
+      question: "Projeleriniz ulusal veya uluslararası bir destek alıyor mu?",
       answer:
-        "FAQ stands for Frequently Asked Questions. It is a list that provides answers to common questions people may have about a specific product, service, or topic.",
+        "Evet, projelerimizin akademik geçerliliği tescillidir. Örneğin, Bor Karbür üretimi üzerine yürüttüğümüz projemiz TÜBİTAK 2209-A Üniversite Öğrencileri Araştırma Projeleri Destekleme Programı kapsamında destek almaya hak kazanmıştır. Bu, çalışmalarımızın bilimsel derinliğini ve sektördeki potansiyelini göstermektedir.",
     },
     {
-      question: "Why should I use a FAQ on my website or app?",
+      question: "İnsanlık Yararına Teknolojiler kapsamında neler yapıyorsunuz?",
       answer:
-        "Utilizing a FAQ section on your website or app is a practical way to offer instant assistance to your users or customers. Instead of waiting for customer support responses, they can find quick answers to commonly asked questions.",
+        "Madencilik teknolojilerini sadece endüstriyel verimlilik için değil, toplumsal güvenlik için de geliştiriyoruz. Bu kapsamda geliştirdiğimiz Drone projelerimiz, arama-kurtarma faaliyetleri ve riskli maden sahalarının otonom kontrolü gibi alanlarda \"insanlık yararına teknolojiler  kategorisinde değerlendirilerek, teknolojiyi insan hayatını korumak için kullanmaktadır.",
     },
     {
-      question: "How do I effectively create a FAQ section?",
+      question: "Drone projeleriniz madencilik sektörüne nasıl bir yenilik getiriyor?",
       answer:
-        "Creating a FAQ section starts with gathering the most frequent questions you receive from your users or customers. Once you have a list, you need to write clear, detailed, and helpful answers to each question.",
+        "Geliştirdiğimiz drone sistemleri, insanların girmesinin riskli olduğu dar galerilerde ve derin sahalarda otonom haritalama ve gaz ölçümü yapabilmektedir. Bu sayede maden kazalarının önlenmesi ve kaza sonrası müdahale süreçlerinde devrim yaratacak çözümler sunuyoruz.",
     },
     {
-      question: "What are the benefits of having a well-maintained FAQ section?",
+      question: "Bir projeyi MARGE bünyesinde hayata geçirme süreci nasıl işliyor?",
       answer:
-        "There are numerous advantages to maintaining a robust FAQ section. Firstly, it provides immediate answers to common queries, which improves the user experience.",
+        "Fikir aşamasından itibaren multidisipliner bir çalışma yapıyoruz. Maden, Yazılım, Mekanik ve Kimya gibi farklı branşlardaki ekip üyelerimiz bir araya gelerek projenin teorik altyapısını kurar. Ardından prototipleme ve test aşamalarına geçilir. TÜBİTAK gibi prestijli programlara başvurarak projelerimizi resmileştirir ve sektörle buluştururuz.",
     },
     {
-      question: "How do I effectively create a FAQ section?",
+      question: "MARGE projelerinin yerli teknoloji ve stratejik maden hedefleriyle ilişkisi nedir?",
       answer:
-        "Creating a FAQ section starts with gathering the most frequent questions you receive from your users or customers. Once you have a list, you need to write clear, detailed, and helpful answers to each question.",
+        "Türkiye, dünya bor rezervlerinin %70'inden fazlasına ev sahipliği yapmaktadır. Biz de MARGE olarak, sadece ham maddeyi çıkarmayı değil; TÜBİTAK 2209-A destekli projemizle Bor Karbür gibi bu ham maddeyi yüksek teknolojiye (zırh yapımı, nükleer santraller vb.) dönüştürecek süreçler üzerine çalışıyoruz. Aynı zamanda yerli yazılımlarla donattığımız drone sistemlerimizle, madencilikte dışa bağımlılığı azaltmayı ve milli teknoloji hamlesine katkıda bulunmayı temel misyonumuz olarak görüyoruz.",
     },
   ];
 
