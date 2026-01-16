@@ -20,15 +20,15 @@ const defaultLegalLinks = [
 
 const Footer7 = ({
   logo = {
-    url: "https://www.shadcnblocks.com",
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcnblockscom-icon.svg",
+    url: "",
+    src: "https://media.licdn.com/dms/image/v2/D4D0BAQGt7IWvclTA1A/company-logo_200_200/company-logo_200_200/0/1705259034788/itu_marge_logo?e=2147483647&v=beta&t=mWwvoFRfitsIqtmnx9AqOPlBlO1n7QYxqj4XeHzdphY",
     alt: "logo",
-    title: "Shadcnblocks.com",
+    title: "İtu Marge",
   },
   sections = defaultSections,
-  description = "A collection of components for your startup business or side project.",
+  description = "Aşağıda sosyal medya hesaplarımızı bulabilirsiniz.",
   socialLinks = defaultSocialLinks,
-  copyright = "© 2024 Shadcnblocks.com. All rights reserved.",
+  copyright = "© 2026 EL'S  All rights reserved.",
   legalLinks = defaultLegalLinks,
   className,
 }: Footer7Props) => {
