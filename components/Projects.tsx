@@ -74,7 +74,7 @@ export default function Projects() {
               className="group flex flex-col"
             >
               <div className="mb-4 flex overflow-clip rounded-xl md:mb-5">
-                <div className="transition-opacity duration-300 group-hover:opacity-80">
+                <div className="w-full transition-opacity duration-300 group-hover:opacity-80">
                   <img
                     alt={project.title}
                     className="aspect-3/2 h-full w-full object-cover object-center"
