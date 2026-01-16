@@ -69,12 +69,12 @@ const defaultLegalLinks: FooterLink[] = [
 const Footer7 = ({
   logo = {
     url: "",
-    src: "https://media.licdn.com/dms/image/v2/D4D0BAQGt7IWvclTA1A/company-logo_200_200/company-logo_200_200/0/1705259034788/itu_marge_logo",
+    src: "https://media.licdn.com/dms/image/v2/D4D0BAQGt7IWvclTA1A/company-logo_200_200/company-logo_200_200/0/1705259034788/itu_marge_logo?e=2147483647&v=beta&t=mWwvoFRfitsIqtmnx9AqOPlBlO1n7QYxqj4XeHzdphY",
     alt: "İTÜ MARGE Logo",
     title: "İTÜ MARGE",
   },
   sections = defaultSections,
-  description = "Aşağıda sosyal medya hesaplarımızı bulabilirsiniz.",
+  description = "Aşağıda sosyal medya hesaplarımız bulunmaktadır.",
   socialLinks = defaultSocialLinks,
   copyright = "© 2026 EL'S. All rights reserved.",
   legalLinks = defaultLegalLinks,
@@ -88,12 +88,17 @@ const Footer7 = ({
           <div className="flex flex-col gap-6">
             <div className="flex items-center gap-2">
               <a href={logo.url}>
-                <img src={logo.src} alt={logo.alt} className="h-8" />
+                <img
+                  src={logo.src}
+                  alt={logo.alt}
+                  title={logo.title}
+                  className="h-8"
+                />
               </a>
               <h2 className="text-xl font-semibold">{logo.title}</h2>
             </div>
 
-            <p className="max-w-[70%] text-sm text-muted-foreground">
+            <p className="max-w-md text-sm text-muted-foreground leading-relaxed">
               {description}
             </p>
 
