@@ -59,11 +59,11 @@ export default function Projects() {
           <div className="flex items-start justify-between gap-8">
             <div>
               <h2 className="mb-4 w-full text-4xl font-medium md:mb-5 md:text-5xl lg:mb-6 lg:text-6xl">
-                Projects
+                Projelerimiz
               </h2>
             </div>
           </div>
-          <p>Insights, tutorials, and thoughts on modern software development</p>
+          <p>Aşağıda Detayları Görmek İçin Resimin Üstüne Tıklayınız!</p>
         </div>
 
         <div className="grid gap-x-4 gap-y-8 md:grid-cols-2 lg:gap-x-6 lg:gap-y-12 2xl:grid-cols-3">
