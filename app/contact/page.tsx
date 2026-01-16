@@ -18,11 +18,11 @@ export default function ContactPage() {
                 <path d="M7 20H3v-2a4 4 0 014-4h1" />
                 <circle cx="12" cy="8" r="3" />
               </svg>
-              Community
+              İTÜ Marge
             </span>
 
-            <h4 className="mt-4 text-[28px] leading-[36px] font-semibold tracking-tight text-foreground md:text-center md:text-3xl xl:text-[48px] xl:leading-[56px]">Be part of our network</h4>
-            <p className="mt-2 text-lg text-muted-foreground md:text-center xl:mt-3 xl:text-xl">Engage, <span className="font-medium text-foreground">explore</span>, and <span className="font-medium text-foreground">evolve</span> with like-minded creators and coders.</p>
+            <h4 className="mt-4 text-[28px] leading-[36px] font-semibold tracking-tight text-foreground md:text-center md:text-3xl xl:text-[48px] xl:leading-[56px]">Bizimle İletişime Geçin</h4>
+            <p className="mt-2 text-lg text-muted-foreground md:text-center xl:mt-3 xl:text-xl"> <span className="font-medium text-foreground">İtu Marge</span>, ile <span className="font-medium text-foreground">aşağıdaki</span> olan bağlantılarla görüşebilirsiniz.</p>
 
             <div className="mt-6 grid w-full grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:mt-12 xl:gap-6">
               <div data-slot="card" className="bg-card text-card-foreground flex flex-col gap-6 border py-6 shadow-sm rounded-2xl transition-all hover:shadow-md">
@@ -30,7 +30,7 @@ export default function ContactPage() {
                   <Instagram className="mb-4 h-8 w-8 md:h-12 md:w-12 xl:h-16 xl:w-16" />
                   <div className="space-y-2 text-center">
                     <h5 className="text-sm font-medium md:text-lg">Instagram</h5>
-                    <p className="text-sm text-balance text-muted-foreground">Follow us for updates and visual insights</p>
+                    <p className="text-sm text-balance text-muted-foreground">İnstagram hesabımızı takip edin</p>
                   </div>
                 </a>
               </div>
@@ -40,7 +40,7 @@ export default function ContactPage() {
                   <Globe className="mb-4 h-8 w-8 md:h-12 md:w-12 xl:h-16 xl:w-16" />
                   <div className="space-y-2 text-center">
                     <h5 className="text-sm font-medium md:text-lg">Website</h5>
-                    <p className="text-sm text-balance text-muted-foreground">Visit our official site for projects and publications</p>
+                    <p className="text-sm text-balance text-muted-foreground">Web sitemizi ziyaret edin</p>
                   </div>
                 </a>
               </div>
@@ -53,7 +53,7 @@ export default function ContactPage() {
                   </svg>
                   <div className="space-y-2 text-center">
                     <h5 className="text-sm font-medium md:text-lg">E-posta</h5>
-                    <p className="text-sm text-balance text-muted-foreground">Reach out directly via email: info@itumarge.com</p>
+                    <p className="text-sm text-balance text-muted-foreground"> Mailimizden iletişime geçin email: info@itumarge.com</p>
                   </div>
                 </a>
               </div>
