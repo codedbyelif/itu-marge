@@ -56,8 +56,8 @@ const Navbar1 = ({
   },
   menu = [
     { title: "Anasayfa", url: "/" },
-    { title: "Projelerimiz", url: "/projelerimiz" },
-    { title: "İletişim", url: "/iletişim" },
+    { title: "Projelerimiz", url: "/projects" },
+    { title: "İletişim", url: "/contact" },
   ],
   className,
 }: Navbar1Props) => {
