@@ -12,13 +12,10 @@ import Link from 'next/link';
 
 export default function Hero() {
   const slides = [
-    '/placeholder.svg',
-    '/placeholder.svg',
-    '/placeholder.svg',
-    '/placeholder.svg',
-    '/placeholder.svg',
-    '/placeholder.svg',
-    '/placeholder.svg',
+    'https://pbs.twimg.com/media/GpiSnTEWUAA2AgI.jpg',
+    'https://media.licdn.com/dms/image/v2/D4D22AQGgtmFKmn4YGA/feedshare-shrink_1280/B4DZbKvCT1GwAk-/0/1747158066562?e=1770249600&v=beta&t=G7AiZEbclSE7mjhtkkWLOhQd-hoRfv2ggaYg4bQZ3qw',
+    'https://www.metanglobal.com.tr/images/madencilik-567924.jpg',
+    'https://kozakmadencilik.com/wp-content/uploads/2023/02/slider3.jpg',
   ];
 
   
@@ -29,21 +26,20 @@ export default function Hero() {
         <div className="w-full space-y-6 xl:w-1/2 xl:pr-8">
           <div className="w-fit flex items-center gap-3 rounded-full bg-muted/70 px-5 py-1 text-sm select-none font-medium text-secondary-foreground shadow-xs transition-all">
             <span className="size-2.5 rounded-full bg-primary" />
-            İhtiyacınıza uygun planları keşfedin
+           Geleceği Birlikte Kazalım.
           </div>
 
           <h1 className="mt-6 text-5xl font-medium tracking-tight text-foreground md:text-7xl">
-            Hızlı, Güvenilir ve Ölçeklenebilir
+            Madenciliği Yeniden Tanımlıyoruz.
           </h1>
 
           <p className="mt-4 max-w-lg text-muted-foreground/80">
-            İster küçük bir blog isterseniz büyük bir e-ticaret sitesi yönetin, SpyHosting
-            ihtiyaçlarınıza uygun çözümler sunar.
+           İTÜ'nün madencilik alanında kurulan ilk proje takımında sen de yerini al. Madencilikte geleceği bizimle yakala!
           </p>
 
           <div className="flex gap-4 pt-6">
             <Link
-              href="/auth/signup"
+              href="/projects"
               className="group gap-2 flex items-center rounded-full cursor-pointer bg-primary text-primary-foreground px-4 min-h-[36px]"
             >
               <span>Hemen Başla</span>
@@ -53,7 +49,6 @@ export default function Hero() {
         </div>
 
         <div className="relative mt-20 w-full md:mt-28 xl:mt-0 xl:w-1/2">
-          <div className="absolute right-0 top-0 -z-10 h-full w-full rounded-3xl bg-muted xl:top-1/2 xl:mt-4 xl:h-[620px] xl:w-[90%] xl:-translate-y-1/2" />
           <div className="absolute -top-20 left-0 right-0 h-10 overflow-hidden sm:-top-24 sm:h-12">
             <div className="relative h-full w-full">
               <div className="flex h-full animate-[scroll-x_40s_linear_infinite] gap-8 sm:gap-12">
