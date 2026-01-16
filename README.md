@@ -1,6 +1,9 @@
-# İTÜ MARGE - Mining Innovation Platform
+# İTÜ MARGE – Mining Innovation Platform
 
-A modern, responsive web platform developed for İTÜ MARGE (İstanbul Technical University Mining Research Group), showcasing innovative mining projects and technologies. Built with Next.js 15, TypeScript, and Tailwind CSS 
+A modern and responsive web platform created for İTÜ MARGE (Istanbul Technical University Mining Research Group Club).
+This website is designed to represent the club, share its activities, projects, and initiatives, and provide an online presence for members and visitors.
+
+The platform is built using Next.js 15, TypeScript, and Tailwind CSS, focusing on clean design, performance, and accessibility.
 
 ##  Features
 
@@ -76,7 +79,7 @@ itu-mergee/
 └── components.json               # shadcn/ui configuration
 ```
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -120,7 +123,7 @@ itu-mergee/
 - `npm run start` - Start the production server
 - `npm run lint` - Run ESLint for code quality checks
 
-## 🎨 Customization
+## Customization
 
 ### Adding New Projects
 
@@ -136,7 +139,7 @@ Update the `slides` array in `app/components/Hero.tsx` with new image URLs. Make
 
 Update the `defaultSocialLinks` array in `components/footer7.tsx` to modify social media links.
 
-## 🌐 Deployment
+##  Deployment
 
 This project is optimized for deployment on Vercel, Netlify, or any other platform supporting Next.js.
 
