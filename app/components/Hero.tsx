@@ -18,7 +18,7 @@ export default function Hero() {
     'https://kozakmadencilik.com/wp-content/uploads/2023/02/slider3.jpg',
   ];
 
-  
+
 
   return (
     <section className="relative overflow-x-clip py-20 md:py-32">
@@ -26,7 +26,7 @@ export default function Hero() {
         <div className="w-full space-y-6 xl:w-1/2 xl:pr-8">
           <div className="w-fit flex items-center gap-3 rounded-full bg-muted/70 px-5 py-1 text-sm select-none font-medium text-secondary-foreground shadow-xs transition-all">
             <span className="size-2.5 rounded-full bg-primary" />
-           Geleceği Birlikte Kazalım.
+            Geleceği Birlikte Kazalım.
           </div>
 
           <h1 className="mt-6 text-5xl font-medium tracking-tight text-foreground md:text-7xl">
@@ -34,7 +34,7 @@ export default function Hero() {
           </h1>
 
           <p className="mt-4 max-w-lg text-muted-foreground/80">
-           İTÜ'nün madencilik alanında kurulan ilk proje takımında sen de yerini al. Madencilikte geleceği bizimle yakala!
+            İTÜ'nün madencilik alanında kurulan ilk proje takımında sen de yerini al. Madencilikte geleceği bizimle yakala!
           </p>
 
           <div className="flex gap-4 pt-6">
@@ -53,7 +53,7 @@ export default function Hero() {
             <div className="relative h-full w-full">
               <div className="flex h-full animate-[scroll-x_40s_linear_infinite] gap-8 sm:gap-12">
                 {Array(4)
-                  
+
                   .flat()
                   .map((logo, i) => (
                     <div

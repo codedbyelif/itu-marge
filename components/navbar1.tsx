@@ -52,7 +52,7 @@ const Navbar1 = ({
     url: "/",
     src: "https://media.licdn.com/dms/image/v2/D4D0BAQGt7IWvclTA1A/company-logo_200_200/company-logo_200_200/0/1705259034788/itu_marge_logo?e=2147483647&v=beta&t=mWwvoFRfitsIqtmnx9AqOPlBlO1n7QYxqj4XeHzdphY",
     alt: "logo",
-    title: "İtu Marge",
+    title: "İTÜ Marge",
   },
   menu = [
     { title: "Anasayfa", url: "/" },
@@ -63,41 +63,40 @@ const Navbar1 = ({
 }: Navbar1Props) => {
   return (
     <section className={cn("py-4", className)}>
-      <div className="container">
-        {/* Desktop Menu */}
-        <nav className="hidden items-center justify-between lg:flex gap-6">
-          <div className="flex items-center gap-6 ml-12">
-            {/* Logo */}
+      <div className="container mx-auto px-4 md:px-0">
+        <nav className="hidden justify-between md:flex">
+          <div className="flex items-center gap-2">
             <a href={logo.url} className="flex items-center gap-2">
               <img
                 src={logo.src}
-                className="max-h-8 dark:invert"
+                className="max-h-8 w-auto dark:invert"
                 alt={logo.alt}
               />
               <span className="text-lg font-semibold tracking-tighter">
                 {logo.title}
               </span>
             </a>
-            <div className="flex items-center">
-              <NavigationMenu>
-                <NavigationMenuList>
-                  {menu.map((item) => renderMenuItem(item))}
-                </NavigationMenuList>
-              </NavigationMenu>
-            </div>
+          </div>
+          <div className="flex items-center gap-6">
+            <NavigationMenu>
+              <NavigationMenuList>
+                {menu.map((item) => renderMenuItem(item))}
+              </NavigationMenuList>
+            </NavigationMenu>
           </div>
         </nav>
 
-        {/* Mobile Menu */}
-        <div className="block lg:hidden">
+        <div className="block md:hidden">
           <div className="flex items-center justify-between">
-            {/* Logo */}
             <a href={logo.url} className="flex items-center gap-2">
               <img
                 src={logo.src}
-                className="max-h-8 dark:invert"
+                className="max-h-8 w-auto dark:invert"
                 alt={logo.alt}
               />
+              <span className="text-lg font-semibold tracking-tighter">
+                {logo.title}
+              </span>
             </a>
             <Sheet>
               <SheetTrigger asChild>
@@ -111,9 +110,12 @@ const Navbar1 = ({
                     <a href={logo.url} className="flex items-center gap-2">
                       <img
                         src={logo.src}
-                        className="max-h-8 dark:invert"
+                        className="max-h-8 w-auto dark:invert"
                         alt={logo.alt}
                       />
+                      <span className="text-lg font-semibold tracking-tighter">
+                        {logo.title}
+                      </span>
                     </a>
                   </SheetTitle>
                 </SheetHeader>

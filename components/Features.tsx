@@ -13,37 +13,37 @@ const features = [
     {
         title: "Otomasyon & Robotik",
         description: "Maden sahalarında insan müdahalesini en aza indiren otonom sistemler ve robotik teknolojiler.",
-        video: "https://images.unsplash.com/photo-1563206767-5b1d97287374?q=80&w=2670&auto=format&fit=crop", // Robot arm / industrial
+        video: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2670&auto=format&fit=crop", // Robot arm / industrial (Verified)
         icon: Cpu,
     },
     {
         title: "Veri Analizi & AI",
         description: "Büyük veri analitiği ve yapay zeka algoritmaları ile operasyonel verimliliği maksimize edin.",
-        video: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop", // Data dashboard
+        video: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2670&auto=format&fit=crop", // Data / Tech (Verified)
         icon: Database,
     },
     {
         title: "İş Sağlığı ve Güvenliği",
         description: "Gelişmiş sensör ağları ve görüntü işleme teknolojileri ile sahadaki riskleri anlık olarak izleyin.",
-        video: "https://images.unsplash.com/photo-1599814526649-0d86b8c73045?q=80&w=2574&auto=format&fit=crop", // Worker safety
+        video: "https://static.wixstatic.com/media/7f1cf3_11e74d62150f43e5ae18c9ba090b84e6~mv2.jpg/v1/fill/w_568,h_322,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/7f1cf3_11e74d62150f43e5ae18c9ba090b84e6~mv2.jpg", // Worker safety (Verified)
         icon: HardHat,
     },
     {
         title: "Sürdürülebilir Madencilik",
         description: "Çevresel etkileri minimize eden, enerji verimliliği odaklı yeşil madencilik çözümleri.",
-        video: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2832&auto=format&fit=crop", // Nature/Green
+        video: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2832&auto=format&fit=crop", // Nature/Green (Verified)
         icon: Leaf,
     },
     {
         title: "Performans İzleme",
         description: "Ekipman performansını ve üretim metriklerini gerçek zamanlı izleyerek aksama sürelerini azaltın.",
-        video: "https://images.unsplash.com/photo-1556155092-490a1ba16284?q=80&w=2670&auto=format&fit=crop", // Analytics
+        video: "https://images.unsplash.com/photo-1556155092-490a1ba16284?q=80&w=2670&auto=format&fit=crop", // Analytics (Verified)
         icon: BarChart3,
     },
     {
         title: "Jeolojik Modelleme",
         description: "Yeraltı kaynaklarının 3 boyutlu modellemesi ve rezervuar karakterizasyonu.",
-        video: "https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?q=80&w=2574&auto=format&fit=crop", // Geology/Topography
+        video: "https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?q=80&w=2574&auto=format&fit=crop", // Geology/Topography (Verified)
         icon: ScanFace,
     }
 ];
