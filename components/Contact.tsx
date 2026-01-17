@@ -4,8 +4,8 @@ import { Globe, Instagram } from 'lucide-react';
 
 export default function Contact() {
     return (
-        <section className="py-32 w-full">
-            <div className="container mx-auto">
+        <section className="py-12 w-full">
+            <div className="container mx-auto max-sm:p-6">
                 <div className="flex flex-col items-start pb-10 md:items-center md:pb-14 xl:pb-[60px]">
                     <span
                         data-slot="badge"
