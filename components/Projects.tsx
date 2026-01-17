@@ -56,7 +56,7 @@ const projectsData: ProjectItem[] = [
 export default function Projects() {
   return (
     <section className="py-32 w-full">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 xl:px-20">
         <div>
           <p className="mb-1 text-muted-foreground uppercase md:text-lg">Fikirleri Gerçeğe Dönüştürün</p>
           <h1 className="text-3xl font-bold uppercase md:text-7xl">Projelerimiz</h1>

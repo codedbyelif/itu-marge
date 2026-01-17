@@ -11,17 +11,17 @@ import 'swiper/css/pagination';
 import Link from 'next/link';
 
 export default function Hero() {
-  const slides = [
+  const originalSlides = [
     'https://pbs.twimg.com/media/GpiSnTEWUAA2AgI.jpg',
     'https://media.licdn.com/dms/image/v2/D4D22AQGgtmFKmn4YGA/feedshare-shrink_1280/B4DZbKvCT1GwAk-/0/1747158066562?e=1770249600&v=beta&t=G7AiZEbclSE7mjhtkkWLOhQd-hoRfv2ggaYg4bQZ3qw',
     'https://www.metanglobal.com.tr/images/madencilik-567924.jpg',
     'https://kozakmadencilik.com/wp-content/uploads/2023/02/slider3.jpg',
   ];
 
-
+  const slides = [...originalSlides, ...originalSlides, ...originalSlides];
 
   return (
-    <section className="relative overflow-x-clip py-20 md:py-32">
+    <section className="relative overflow-x-clip py-20 md:py-12">
       <div className="container mx-auto mt-4 flex flex-col items-center justify-between gap-8 px-4 text-left sm:gap-10 md:px-6 lg:px-8 xl:mt-14 xl:flex-row xl:gap-12">
         <div className="w-full space-y-6 xl:w-1/2 xl:pr-8">
           <div className="w-fit flex items-center gap-3 rounded-full bg-muted/70 px-5 py-1 text-sm select-none font-medium text-secondary-foreground shadow-xs transition-all">
@@ -95,7 +95,7 @@ export default function Hero() {
               }}
               loop={true}
               modules={[EffectCoverflow, Pagination, Autoplay]}
-              className="mySwiperHero231 mt-8 w-full"
+              className="mySwiperHero231 mt-8 w-full !py-10"
             >
               {slides.map((src, i) => (
                 <SwiperSlide
