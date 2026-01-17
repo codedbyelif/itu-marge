@@ -49,7 +49,7 @@ interface Navbar1Props {
 
 const Navbar1 = ({
   logo = {
-    url: "",
+    url: "/",
     src: "https://media.licdn.com/dms/image/v2/D4D0BAQGt7IWvclTA1A/company-logo_200_200/company-logo_200_200/0/1705259034788/itu_marge_logo?e=2147483647&v=beta&t=mWwvoFRfitsIqtmnx9AqOPlBlO1n7QYxqj4XeHzdphY",
     alt: "logo",
     title: "İtu Marge",

@@ -1,10 +1,12 @@
 'use client';
 
-import { Badge } from '@/components/ui/badge';
+import { ArrowDownRight, ArrowUpRight } from 'lucide-react';
+import Link from 'next/link';
+import { Badge } from "@/components/ui/badge";
 
 interface ProjectItem {
   id: number;
-  href:string;
+  href: string;
   title: string;
   description: string;
   category: string;
@@ -15,38 +17,38 @@ interface ProjectItem {
 const projectsData: ProjectItem[] = [
   {
     id: 1,
-    href:'/projects/boron-carbide',
+    href: '/projects/boron-carbide',
     title: 'Bor Karbür Tabanlı Kesici ve Delici Uç Geliştirilmesi',
     description: 'Bor karbür (B₄C) bazlı, yüksek dayanımlı seramikler üreterek, mermercilik sektöründeki elmas telli ve zincir kollu taş kesme makineleri için daha dayanıklı ve ekonomik yerli kesici uçlar geliştirmeyi amaçlıyoruz.',
     category: 'Research',
-    image: 'https://bilimgenc.tubitak.gov.tr/sites/default/files/styles/bp-770px-custom_user_desktop_1x/public/bor_karbur.JPG?itok=_ie4Pqx0',
+    image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2670&auto=format&fit=crop', // Construction/Mining vibe
     date: '04 Jan 2026'
   },
   {
     id: 2,
-    title: 'Madencilikte Makine İzlemeve Optimizasyon',
-    href:'/projects/mining-optimization',
-    description: 'Geliştirdiğimiz ikinci proje,madencilik sektöründe gerçek zamanlı veri ve sensör teknolojileri kullanarak makine performansını, görev dağılımını ve üretim akışını optimize etmeyi hedeflemektedir. Bu sayede daha etkin planlama ve kaynak yönetimi ile dijital dönüşüme katkı sağlamaktayız.',
+    title: 'Madencilikte Makine İzleme ve Optimizasyon',
+    href: '/projects/mining-optimization',
+    description: 'Geliştirdiğimiz ikinci proje, madencilik sektöründe gerçek zamanlı veri ve sensör teknolojileri kullanarak makine performansını, görev dağılımını ve üretim akışını optimize etmeyi hedeflemektedir.',
     category: 'Maden',
-    image: 'https://cdn.miateknoloji.com/images/IMG94382.jpg',
+    image: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2544&auto=format&fit=crop', // Tech/Industry
     date: '04 Jan 2026'
   },
   {
     id: 3,
     title: 'Nadir Toprak Elementleri Üzerine Araştırmalar',
-    href:'/projects/rare-earth-elements',
-    description: 'MAR-GE\'nin bir diğer projesi, elektronikten savunma sanayisine kadar kritik alanlarda kullanılan Nadir Toprak Elementleri (NTE) üzerine odaklanmaktadır. Proje; NTE\'lerin potansiyelini, çıkarma ve zenginleştirme tekniklerini inceleyerek, gelecekteki teknolojik ihtiyaçlara yönelik bilimsel altyapı oluşturmayı hedeflemektedir.',
+    href: '/projects/rare-earth-elements',
+    description: 'MAR-GE\'nin bir diğer projesi, elektronikten savunma sanayisine kadar kritik alanlarda kullanılan Nadir Toprak Elementleri (NTE) üzerine odaklanmaktadır.',
     category: 'Malzeme',
-    image: 'https://nobetcigazetecom.teimg.com/crop/1280x720/nobetcigazete-com/uploads/2025/10/nadir-toprak-elementler.webp',
+    image: 'https://images.unsplash.com/photo-1618331835717-801e976710b2?q=80&w=2535&auto=format&fit=crop', // Abstract materials/Minerals
     date: '04 Jan 2026'
   },
   {
     id: 4,
     title: 'Jeotermalde Rezervuar Yönetimi',
-    href:'/projects/geothermal-reservoir',
-    description: 'Jeotermalde rezervuar yönetimi alanına adım atarken, başlangıçta bu konuda çalışan uzmanlarla iletişime geçtik. Ardından,kapsamlı makale ve Türkiye\'deki jeotermal uygulamalarına yönelik araştırmalar yaparak konu hakkındaki bilgi birikimimizi vestratejik fikirlerimizi geliştirmeyi sürdürüyoruz.',
+    href: '/projects/geothermal-reservoir',
+    description: 'Jeotermalde rezervuar yönetimi alanına adım atarken, başlangıçta bu konuda çalışan uzmanlarla iletişime geçtik. Stratejik fikirlerimizi geliştirmeyi sürdürüyoruz.',
     category: 'Jeotermal',
-    image: 'https://greenix.com.tr/storage/bloglar/Jeotermal%20Enerji%20Santralleri.png',
+    image: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2670&auto=format&fit=crop', // Mountains/Steam/Nature
     date: '04 Jan 2026'
   },
 ];
@@ -55,52 +57,60 @@ export default function Projects() {
   return (
     <section className="py-32 w-full">
       <div className="container mx-auto px-4">
-        <div className="mb-8 md:mb-14 lg:mb-16">
-          <div className="flex items-start justify-between gap-8">
-            <div>
-              <h2 className="mb-4 w-full text-4xl font-medium md:mb-5 md:text-5xl lg:mb-6 lg:text-6xl">
-                Projelerimiz
-              </h2>
-            </div>
-          </div>
-          <p>Aşağıda Detayları Görmek İçin Resimin Üstüne Tıklayınız!</p>
+        <div>
+          <p className="mb-1 text-muted-foreground uppercase md:text-lg">Fikirleri Gerçeğe Dönüştürün</p>
+          <h1 className="text-3xl font-bold uppercase md:text-7xl">Projelerimiz</h1>
+          <p className="mt-7 max-w-2xl text-muted-foreground">
+            Yaratıcılığın, mühendisliğin ve vizyonun birleşerek geleceğin teknolojilerini şekillendirdiği yer. Her biri sektörü dönüştürmek ve katma değer yaratmak için özenle tasarlanmış kapsamlı proje portföyümüzü keşfedin.
+          </p>
+          <Link href="/projects">
+            <button
+              data-slot="button"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-10 rounded-md px-6 has-[>svg]:px-4 mt-7"
+            >
+              Tüm Projeleri Gör
+              <ArrowDownRight className="lucide lucide-arrow-down-right size-4" />
+            </button>
+          </Link>
         </div>
 
-        <div className="grid gap-x-4 gap-y-8 md:grid-cols-2 lg:gap-x-6 lg:gap-y-12 2xl:grid-cols-3">
-          {projectsData.map((project) => (
-            <a
+        <div className="mt-24 flex flex-col gap-5 md:mt-36">
+          {projectsData.map((project, index) => (
+            <Link
               key={project.id}
               href={project.href}
-              className="group flex flex-col"
+              className="group relative isolate min-h-72 bg-cover bg-center px-5 py-14 lg:px-12 lg:py-24 rounded-2xl overflow-hidden"
+              style={{ backgroundImage: `url("${project.image}")` }}
             >
-              <div className="mb-4 flex overflow-clip rounded-xl md:mb-5">
-                <div className="w-full transition-opacity duration-300 group-hover:opacity-80">
-                  <img
-                    alt={project.title}
-                    className="aspect-3/2 h-full w-full object-cover object-center"
-                    src={project.image}
-                  />
+              <div className="relative z-10 flex flex-col gap-7 text-white/90 transition-colors duration-300 ease-out group-hover:text-white lg:flex-row">
+                <div className="flex gap-1 text-2xl font-bold">
+                  <span>/</span>
+                  <span>{String(index + 1).padStart(2, '0')}</span>
+                </div>
+                <div className="flex flex-1 flex-col gap-2.5">
+                  <h3 className="text-2xl font-bold lg:text-4xl">{project.title}</h3>
+                  <p className="text-sm font-medium uppercase tracking-wider">{project.category}</p>
+                </div>
+                <div className="flex-1">
+                  <div className="flex flex-col">
+                    <p className="line-clamp-3 text-white/80">{project.description}</p>
+                    <div className="mt-2.5 h-0 overflow-hidden transition-all duration-300 ease-out group-hover:h-10">
+                      <div>
+                        <button
+                          data-slot="button"
+                          className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background text-foreground shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-10 rounded-md px-6 has-[>svg]:px-4 dark w-fit opacity-0 transition-opacity duration-300 ease-out group-hover:opacity-100"
+                        >
+                          Projeyi İncele
+                          <ArrowUpRight className="lucide lucide-arrow-up-right size-4" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div>
-                <Badge className="inline-flex items-center justify-center rounded-full border px-2 py-0.5 text-xs font-medium w-fit whitespace-nowrap shrink-0 gap-1 overflow-hidden border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/90">
-                  {project.category}
-                </Badge>
-              </div>
-              <div className="mb-2 line-clamp-3 pt-4 text-lg font-medium break-words md:mb-3 md:pt-4 md:text-2xl lg:pt-4 lg:text-3xl">
-                {project.title}
-              </div>
-              <div className="mb-4 line-clamp-2 text-sm text-muted-foreground md:mb-5 md:text-base">
-                {project.description}
-              </div>
-            </a>
+              <div className="absolute inset-0 z-0 bg-black/60 backdrop-blur-[1px] transition-all duration-500 ease-out group-hover:bg-black/40 group-hover:backdrop-blur-none"></div>
+            </Link>
           ))}
-        </div>
-
-        <div className="mt-8 flex flex-col items-center py-2 md:hidden">
-          <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground hover:bg-primary/90 h-9 px-4 py-2 w-full sm:w-fit">
-            View all posts
-          </button>
         </div>
       </div>
     </section>
