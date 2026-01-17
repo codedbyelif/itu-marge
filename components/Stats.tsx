@@ -1,3 +1,5 @@
+import BlurText from "./BlurText";
+
 export default function Stats() {
     return (
         <section className="py-32 w-full bg-background text-foreground">
@@ -6,29 +8,47 @@ export default function Stats() {
                     Takım İstatistikleri
                 </h1>
                 <div className="grid gap-10 pt-9 md:grid-cols-3 lg:gap-0 lg:pt-20">
-                    <div className="text-center">
+                    <div className="flex flex-col items-center justify-center text-center">
                         <p className="text-sm font-medium text-muted-foreground">
                             Ekibimizdeki kişi sayısı
                         </p>
-                        <p className="pt-4 text-7xl font-semibold lg:pt-10">20+</p>
+                        <BlurText
+                            text="20+"
+                            delay={200}
+                            animateBy="words"
+                            direction="top"
+                            className="pt-4 text-7xl font-semibold lg:pt-10 mb-2 block"
+                        />
                         <p className="text-2xl font-semibold text-muted-foreground">
                             Araştırmacı & Mühendis
                         </p>
                     </div>
-                    <div className="text-center">
+                    <div className="flex flex-col items-center justify-center text-center">
                         <p className="text-sm font-medium text-muted-foreground">
                             Kuruluş Yılımız
                         </p>
-                        <p className="pt-4 text-7xl font-semibold lg:pt-10">2020</p>
+                        <BlurText
+                            text="2020"
+                            delay={600}
+                            animateBy="words"
+                            direction="top"
+                            className="pt-4 text-7xl font-semibold lg:pt-10 mb-2 block"
+                        />
                         <p className="text-2xl font-semibold text-muted-foreground">
                             Yılından Beri
                         </p>
                     </div>
-                    <div className="text-center">
+                    <div className="flex flex-col items-center justify-center text-center">
                         <p className="text-sm font-medium text-muted-foreground">
                             Tamamlanan Proje Sayısı
                         </p>
-                        <p className="pt-4 text-7xl font-semibold lg:pt-10">15+</p>
+                        <BlurText
+                            text="15+"
+                            delay={1000}
+                            animateBy="words"
+                            direction="top"
+                            className="pt-4 text-7xl font-semibold lg:pt-10 mb-2 block"
+                        />
                         <p className="text-2xl font-semibold text-muted-foreground">
                             Başarılı Proje
                         </p>
