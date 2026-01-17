@@ -81,7 +81,7 @@ const Footer7 = ({
   className,
 }: Footer7Props) => {
   return (
-    <section className={cn("py-32 border-t", className)}>
+    <section className={cn("py-6 border-t", className)}>
       <div className="container mx-auto px-4">
         <div className="flex flex-col gap-10 lg:flex-row">
           {/* LEFT */}

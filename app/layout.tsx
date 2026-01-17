@@ -31,7 +31,7 @@ export default function RootLayout({
       >
         <div className="relative">
           <Navbar1 className="fixed top-0 left-0 right-0 z-50 bg-white/70 dark:bg-black/60 backdrop-blur-sm" />
-          <main className="pt-24">
+          <main className="">
             {children}
           </main>
           <Footer7 />
