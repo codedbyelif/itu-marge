@@ -1,5 +1,5 @@
 import React from "react";
-import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
 import { cn } from "@/lib/utils";
 
 /* ===================== TYPES ===================== */
@@ -57,6 +57,11 @@ const defaultSocialLinks: SocialLink[] = [
     href: "https://www.linkedin.com/company/itu-marge/",
     label: "LinkedIn",
   },
+  {
+    icon: <FaGithub className="size-5" />,
+    href: "https://github.com/codedbyelif",
+    label: "GitHub",
+  },
 ];
 
 const defaultLegalLinks: FooterLink[] = [
@@ -105,7 +110,7 @@ const Footer7 = ({
             <ul className="flex items-center gap-6 text-muted-foreground">
               {socialLinks.map((social, idx) => (
                 <li key={idx} className="hover:text-primary">
-                  <a href={social.href} aria-label={social.label}>
+                  <a href={social.href} aria-label={social.label} target="_blank" rel="noopener noreferrer">
                     {social.icon}
                   </a>
                 </li>
@@ -121,7 +126,7 @@ const Footer7 = ({
                 <ul className="space-y-3 text-sm text-muted-foreground">
                   {section.links.map((link, linkIdx) => (
                     <li key={linkIdx} className="hover:text-primary">
-                      <a href={link.href}>{link.name}</a>
+                      <a href={link.href} target="_blank" rel="noopener noreferrer">{link.name}</a>
                     </li>
                   ))}
                 </ul>
@@ -132,11 +137,11 @@ const Footer7 = ({
 
         {/* BOTTOM */}
         <div className="mt-8 flex flex-col gap-4 border-t py-8 text-xs text-muted-foreground md:flex-row md:justify-between">
-          <p>{copyright}</p>
+          <a href="https://els.network" target="_blank" rel="noopener noreferrer">{copyright}</a>
           <ul className="flex gap-4">
             {legalLinks.map((link, idx) => (
               <li key={idx} className="hover:text-primary">
-                <a href={link.href}>{link.name}</a>
+                <a href={link.href} target="_blank" rel="noopener noreferrer">{link.name}</a>
               </li>
             ))}
           </ul>
