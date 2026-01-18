@@ -5,17 +5,17 @@ This website is designed to represent the club, share its activities, projects, 
 
 The platform is built using Next.js 15, TypeScript, and Tailwind CSS, focusing on clean design, performance, and accessibility.
 
-##  Features
+## Features
 
 - **Responsive Design**: Fully responsive layout that works seamlessly across all devices
 - **Modern UI/UX**: Clean, professional design using shadcn/ui components
-- **Interactive Hero Section**: Dynamic image carousel with mining industry visuals
+- **Interactive Hero Section**: Dynamic image carousel with mining industry visuals and typewriter text effect
 - **Project Showcase**: Dedicated pages for various mining projects including geothermal reservoir analysis, boron carbide research, and rare earth elements optimization
 - **Contact Integration**: Professional contact page for inquiries and collaborations
 - **Social Media Integration**: Direct links to official social media accounts
 - **SEO Optimized**: Built with Next.js for optimal search engine performance
 
-##  Tech Stack
+## Tech Stack
 
 - **Framework**: Next.js 15 (App Router)
 - **Language**: TypeScript
@@ -23,63 +23,52 @@ The platform is built using Next.js 15, TypeScript, and Tailwind CSS, focusing o
 - **UI Components**: shadcn/ui
 - **Icons**: Lucide React, React Icons
 - **Image Handling**: Next.js Image component with external domain support
-- **Animations**: Swiper.js for image carousels
+- **Animations**: Swiper.js for image carousels, custom CSS animations
 
-##  Project Structure
+## Project Structure
 
 ```
-itu-mergee/
+itu-marge/
 ├── app/
 │   ├── components/
-│   │   ├── Hero.tsx              # Main hero section with image carousel
-│   │   └── herosection.tsx       # Alternative hero component
+│   │   └── typewriter.tsx        # Typewriter effect component
 │   ├── contact/
 │   │   └── page.tsx              # Contact page
+│   ├── projects/
+│   │   ├── boron-carbide/
+│   │   │   └── page.tsx          # Boron carbide project page
+│   │   ├── geothermal-reservoir/
+│   │   │   └── page.tsx          # Geothermal reservoir project page
+│   │   ├── mining-optimization/
+│   │   │   └── page.tsx          # Mining optimization project page
+│   │   ├── rare-earth-elements/
+│   │   │   └── page.tsx          # Rare earth elements project page
+│   │   └── page.tsx              # Projects overview
 │   ├── globals.css               # Global styles
 │   ├── layout.tsx                # Root layout
-│   ├── page.tsx                  # Homepage
-│   └── projects/
-│       ├── page.tsx              # Projects overview
-│       ├── boron-carbide/
-│       │   └── page.tsx          # Boron carbide project page
-│       ├── geothermal-reservoir/
-│       │   └── page.tsx          # Geothermal reservoir project page
-│       ├── mining-optimization/
-│       │   └── page.tsx          # Mining optimization project page
-│       └── rare-earth-elements/
-│           └── page.tsx          # Rare earth elements project page
+│   └── page.tsx                  # Homepage
 ├── components/
+│   ├── ui/                       # shadcn/ui components
+│   ├── BlurText.tsx              # Text animation component
+│   ├── Contact.tsx               # Contact section component
 │   ├── FAQ.tsx                   # FAQ component
-│   ├── footer7.tsx               # Footer component with social links
+│   ├── Features.tsx              # Features section
 │   ├── HeroSection.tsx           # Hero section component
-│   ├── navbar1.tsx               # Navigation bar
-│   └── Projects.tsx              # Projects showcase component
-├── components/ui/                # shadcn/ui components
-│   ├── accordion.tsx
-│   ├── badge.tsx
-│   ├── button.tsx
-│   ├── navigation-menu.tsx
-│   ├── sheet.tsx
-│   └── ...
+│   ├── ProjectHero.tsx           # Hero component for project pages
+│   ├── Projects.tsx              # Projects showcase component
+│   ├── Stats.tsx                 # Statistics component
+│   ├── content1.tsx              # Content section
+│   ├── footer7.tsx               # Footer component with social links
+│   └── navbar1.tsx               # Navigation bar
 ├── lib/
 │   └── utils.ts                  # Utility functions
 ├── public/                       # Static assets
-│   ├── file.svg
-│   ├── globe.svg
-│   ├── next.svg
-│   ├── vercel.svg
-│   └── window.svg
 ├── next.config.ts                # Next.js configuration
-├── next-env.d.ts                 # Next.js type definitions
 ├── package.json                  # Dependencies and scripts
-├── tailwind.config.ts            # Tailwind CSS configuration
-├── tsconfig.json                 # TypeScript configuration
-├── eslint.config.mjs             # ESLint configuration
-├── postcss.config.mjs            # PostCSS configuration
-└── components.json               # shadcn/ui configuration
+└── tailwind.config.ts            # Tailwind CSS configuration
 ```
 
-##  Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -90,8 +79,8 @@ itu-mergee/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/codedbyelif/itu-mergee.git
-   cd itu-mergee
+   git clone https://github.com/codedbyelif/itu-marge.git
+   cd itu-marge
    ```
 
 2. **Install dependencies**
@@ -116,7 +105,7 @@ itu-mergee/
    
    Navigate to [http://localhost:3000](http://localhost:3000) to see the application.
 
-##  Available Scripts
+## Available Scripts
 
 - `npm run dev` - Start the development server
 - `npm run build` - Build the application for production
@@ -133,23 +122,18 @@ itu-mergee/
 
 ### Modifying Hero Images
 
-Update the `slides` array in `app/components/Hero.tsx` with new image URLs. Make sure to add the domains to `next.config.ts` if using external images.
+1. Update the `slides` array in `app/components/Hero.tsx` or `components/HeroSection.tsx`.
+2. Ensure external domains are added to `next.config.ts`.
 
 ### Social Media Links
 
 Update the `defaultSocialLinks` array in `components/footer7.tsx` to modify social media links.
 
-##  Deployment
+## Deployment
 
-This project is optimized for deployment on Vercel, Netlify, or any other platform supporting Next.js.
+This project is optimized for deployment on Vercel, Netlify, or specific server environments.
 
-### Vercel Deployment
-
-1. Connect your GitHub repository to Vercel
-2. Vercel will automatically detect Next.js and deploy
-3. Your site will be live at `your-project.vercel.app`
-
-##  Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -157,19 +141,14 @@ This project is optimized for deployment on Vercel, Netlify, or any other platfo
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## License
-
-This project is proprietary and developed for İTÜ MARGE. All rights reserved.
-
-##  Author
+## Author
 
 **Coded by Elif**  
 - GitHub: [@codedbyelif](https://github.com/codedbyelif)
 - LinkedIn: [Elif Kaynar](https://www.linkedin.com/in/elif-kaynar/)
+- Website: [EL'S](https://els.network)
 
-##  Acknowledgments
+## License
 
-- İTÜ MARGE for the opportunity to develop this platform
-- Next.js team for the amazing framework
-- shadcn/ui for the beautiful components
-- All contributors and supporters
+This project is proprietary and developed for İTÜ MARGE. All rights reserved.
+Belongs to **codedbyelif**.
