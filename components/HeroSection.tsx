@@ -13,7 +13,7 @@ export default function HeroSection() {
           />
           <div className="pt-2 pb-1">
             <p className="text-lg font-medium tracking-tight text-background">
-              İtu Marge
+              İtu Marge Takımı
             </p>
             <p className="text-sm text-background/50">@itumarge</p>
           </div>

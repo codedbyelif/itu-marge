@@ -13,7 +13,7 @@ export default function Stats() {
                             Ekibimizdeki kişi sayısı
                         </p>
                         <BlurText
-                            text="20+"
+                            text="16"
                             delay={200}
                             animateBy="words"
                             direction="top"
@@ -28,7 +28,7 @@ export default function Stats() {
                             Kuruluş Yılımız
                         </p>
                         <BlurText
-                            text="2020"
+                            text="2025"
                             delay={600}
                             animateBy="words"
                             direction="top"
@@ -43,7 +43,7 @@ export default function Stats() {
                             Tamamlanan Proje Sayısı
                         </p>
                         <BlurText
-                            text="15+"
+                            text="5+"
                             delay={1000}
                             animateBy="words"
                             direction="top"
