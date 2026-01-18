@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
 import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
-
+import { TypewriterText } from './typewriter';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
@@ -29,9 +29,17 @@ export default function Hero() {
             Geleceği Birlikte Kazalım.
           </div>
 
-          <h1 className="mt-6 text-5xl font-medium tracking-tight text-foreground md:text-7xl">
-            Madenciliği Yeniden Tanımlıyoruz.
+          <h1 className="mt-6 text-4xl sm:text-5xl font-medium tracking-tight text-foreground md:text-7xl">
+            Madenciliği Yeniden
+            <TypewriterText
+              className="text-foreground ml-2"
+              speed={100}
+              deleteSpeed={50}
+              pauseTime={1500}
+            />
           </h1>
+
+
 
           <p className="mt-4 max-w-lg text-muted-foreground/80">
             İTÜ'nün madencilik alanında kurulan ilk proje takımında sen de yerini al. Madencilikte geleceği bizimle yakala!
