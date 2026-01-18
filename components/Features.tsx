@@ -52,7 +52,7 @@ const features = [
 
 export default function Features() {
     return (
-        <section className="py-24 w-full bg-secondary/20">
+        <section className="pt-24 pb-10 w-full bg-secondary/20">
             <div className="container mx-auto px-4">
                 <div className="mx-auto mb-16 flex max-w-[48rem] flex-col gap-6 text-center">
                     <h2 className="text-4xl font-semibold xl:text-5xl">Teknolojik Kabiliyetlerimiz</h2>

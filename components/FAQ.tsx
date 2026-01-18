@@ -37,7 +37,7 @@ export default function FAQ() {
   ];
 
   return (
-    <section className="py-32 w-full">
+    <section className="pt-12 pb-32 w-full">
       <div className="container mx-auto max-w-4xl px-4">
         <h2 className="mt-2 mb-12 text-3xl font-bold md:text-6xl">Sıkça Sorulan Sorular</h2>
         <Accordion type="single" collapsible className="space-y-2 md:space-y-4">
