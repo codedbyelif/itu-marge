@@ -31,8 +31,9 @@ export default function Hero() {
 
           <h1 className="mt-6 text-4xl sm:text-5xl font-medium tracking-tight text-foreground md:text-7xl">
             Madenciliği Yeniden
+            <br />
             <TypewriterText
-              className="text-foreground ml-2"
+              className="text-foreground"
               speed={100}
               deleteSpeed={50}
               pauseTime={1500}
