@@ -1,5 +1,7 @@
 'use client';
 
+import Image from "next/image";
+
 import {
     Carousel,
     CarouselContent,
@@ -43,7 +45,7 @@ const features = [
     {
         title: "Jeolojik Modelleme",
         description: "Yeraltı kaynaklarının 3 boyutlu modellemesi ve rezervuar karakterizasyonu.",
-        video: "https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?q=80&w=2574&auto=format&fit=crop", // Geology/Topography (Verified)
+        video: "https://lh5.googleusercontent.com/proxy/QlAyuHjdr8R5Yh9WW89del_IScykpN7kwfD79jo4d2bL30ePTbHCtfjThtyPA1fP99pfp_3iYhaCodR5JtD4yN5l_eBQgHTHzkDZkRLtXTstvLt_LGMEXdzR5BNtbkLntmnsUbWp65tqEJIslRgk_xmBStPqiYex-EZgkk0Xh4ylIZ4AxzoBi4-8cOQkDJGF38IyYoceRg", // Geology/Topography (Verified)
         icon: ScanFace,
     }
 ];
@@ -75,10 +77,12 @@ export default function Features() {
                                         <div className="flex flex-col gap-6 rounded-2xl border bg-background p-6 h-full shadow-sm transition-all hover:shadow-md">
                                             <div className="relative aspect-video w-full overflow-hidden rounded-xl">
                                                 {/* In a real app, replace simple img with video auto-play on hover or always */}
-                                                <img
+
+                                                <Image
                                                     src={feature.video}
                                                     alt={feature.title}
-                                                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                                    fill
+                                                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                                                 />
                                                 <div className="absolute top-3 left-3 flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-primary-foreground shadow-sm">
                                                     <feature.icon className="h-5 w-5" />

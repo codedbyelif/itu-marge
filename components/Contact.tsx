@@ -1,6 +1,6 @@
 'use client';
 
-import { Globe, Instagram } from 'lucide-react';
+import { Instagram, Linkedin } from 'lucide-react';
 
 export default function Contact() {
     return (
@@ -34,11 +34,11 @@ export default function Contact() {
                         </div>
 
                         <div data-slot="card" className="bg-card text-card-foreground flex flex-col gap-6 border py-6 shadow-sm rounded-2xl transition-all hover:shadow-md">
-                            <a href="https://www.itumarge.com" target="_blank" rel="noopener noreferrer" className="flex h-full flex-col items-center p-6 md:p-8 xl:p-10">
-                                <Globe className="mb-4 h-8 w-8 md:h-12 md:w-12 xl:h-16 xl:w-16" />
+                            <a href="https://www.linkedin.com/company/itu-marge/" target="_blank" rel="noopener noreferrer" className="flex h-full flex-col items-center p-6 md:p-8 xl:p-10">
+                                <Linkedin className="mb-4 h-8 w-8 md:h-12 md:w-12 xl:h-16 xl:w-16" />
                                 <div className="space-y-2 text-center">
-                                    <h5 className="text-sm font-medium md:text-lg">Website</h5>
-                                    <p className="text-sm text-balance text-muted-foreground">Web sitemizi ziyaret edin</p>
+                                    <h5 className="text-sm font-medium md:text-lg">Linkedln</h5>
+                                    <p className="text-sm text-balance text-muted-foreground">Linkedln hesabımızı takip edin</p>
                                 </div>
                             </a>
                         </div>

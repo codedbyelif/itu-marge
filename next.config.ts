@@ -38,6 +38,21 @@ const nextConfig: NextConfig = {
         hostname: "kozakmadencilik.com",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "lh5.googleusercontent.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "static.wixstatic.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+        pathname: "/**",
+      },
     ],
   },
 };
