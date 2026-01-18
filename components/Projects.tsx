@@ -58,8 +58,8 @@ export default function Projects() {
     <section className="py-32 w-full">
       <div className="container mx-auto px-4 xl:px-20">
         <div>
-          <p className="mb-1 text-muted-foreground uppercase md:text-lg">Fikirleri Gerçeğe Dönüştürün</p>
-          <h1 className="text-3xl font-bold uppercase md:text-7xl">Projelerimiz</h1>
+          <p className="mb-1 text-muted-foreground uppercase md:text-lg">FİKİRLERİNİZİ GERÇEĞE DÖNÜŞTÜRÜN</p>
+          <h1 className="text-3xl font-bold uppercase md:text-7xl">PROJELERİMİZ</h1>
           <p className="mt-7 max-w-2xl text-muted-foreground">
             Yaratıcılığın, mühendisliğin ve vizyonun birleşerek geleceğin teknolojilerini şekillendirdiği yer. Her biri sektörü dönüştürmek ve katma değer yaratmak için özenle tasarlanmış kapsamlı proje portföyümüzü keşfedin.
           </p>
