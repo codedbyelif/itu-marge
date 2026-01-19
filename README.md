@@ -52,7 +52,7 @@ itu-marge/
 │   ├── BlurText.tsx              # Text animation component
 │   ├── Contact.tsx               # Contact section component
 │   ├── FAQ.tsx                   # FAQ component
-│   ├── Features.tsx              # Features section
+│   ├── Features.tsx              # Features sectionS
 │   ├── HeroSection.tsx           # Hero section component
 │   ├── ProjectHero.tsx           # Hero component for project pages
 │   ├── Projects.tsx              # Projects showcase component
@@ -152,3 +152,9 @@ This project is optimized for deployment on Vercel, Netlify, or specific server 
 
 This project is proprietary and developed for İTÜ MARGE. All rights reserved.
 Belongs to **codedbyelif**.
+
+### Important Usage Terms
+
+1.  **Copyright Notice**: The "© 2026 EL'S. All rights reserved." notice in the footer must **NOT** be removed.
+2.  **Attribution**: The GitHub link to `codedbyelif` in the footer must **NOT** be removed.
+3.  **Forking**: You are free to fork this repository and use it for your own purposes, provided you comply with the attribution and copyright notice requirements above.

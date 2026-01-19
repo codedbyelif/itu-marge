@@ -65,8 +65,8 @@ const defaultSocialLinks: SocialLink[] = [
 ];
 
 const defaultLegalLinks: FooterLink[] = [
-  { name: "Terms and Conditions", href: "#" },
-  { name: "Privacy Policy", href: "#" },
+  { name: "Terms and Conditions", href: "https://github.com/codedbyelif/itu-marge?tab=readme-ov-file#readme" },
+  { name: "Privacy Policy", href: "https://github.com/codedbyelif/itu-marge?tab=readme-ov-file#readme" },
 ];
 
 /* ===================== COMPONENT ===================== */
