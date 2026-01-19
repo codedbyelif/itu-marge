@@ -5,7 +5,7 @@ export default function HeroSection() {
     <section className="bg-white py-32 text-foreground w-full">
       <div className="container flex flex-col items-center justify-center gap-25 lg:flex-row lg:gap-[10vw]">
 
-        <div className="w-full max-w-[350px] sm:max-w-lg lg:max-w-2xl rotate-[-6deg] border bg-foreground p-1 text-background">
+        <div className="w-full max-w-[300px] sm:max-w-md lg:max-w-xl rotate-[-6deg] border bg-foreground p-1 text-background">
           <img
             alt="Card"
             className="pointer-events-none h-80 sm:h-96 lg:h-120 w-full object-cover"
